@@ -1,0 +1,20 @@
+html,
+body { font-kerning: auto; }
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.site-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 1;
+    margin-top: 6rem;
+}
+
+.site-content { flex: 1 1 auto !important; }

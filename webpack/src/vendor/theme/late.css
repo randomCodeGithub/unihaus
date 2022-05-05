@@ -1,0 +1,165 @@
+/* Styles applied after user interaction */
+
+/* Mobile max mega menu */
+@media only screen and (max-width: 1099.98px) {
+  .responsive-menu
+    #mega-menu-wrap-header
+    #mega-menu-header
+    > li.mega-menu-megamenu
+    > ul.mega-sub-menu
+    > li.mega-menu-item
+    > a.mega-menu-link,
+  .responsive-menu
+    #mega-menu-wrap-header
+    #mega-menu-header
+    > li.mega-menu-megamenu
+    > ul.mega-sub-menu
+    li.mega-menu-column
+    > ul.mega-sub-menu
+    > li.mega-menu-item
+    > a.mega-menu-link,
+  .responsive-menu
+    #mega-menu-wrap-header
+    #mega-menu-header
+    > li.mega-menu-megamenu
+    > ul.mega-sub-menu
+    li.product-cat
+    > ul.mega-sub-menu
+    > li.mega-menu-item
+    li.mega-menu-item
+    > a.mega-menu-link {
+    font-family: "Popins-medium";
+    font-size: 16px !important;
+    font-weight: 500 !important;
+  }
+
+  .responsive-menu
+    #mega-menu-wrap-header
+    #mega-menu-header
+    > li.mega-menu-item
+    > a.mega-menu-link {
+    font-family: "Popins-medium";
+    font-weight: 600;
+  }
+
+  .responsive-menu
+    #mega-menu-wrap-header
+    #mega-menu-header
+    > li.mega-menu-megamenu
+    > ul.mega-sub-menu
+    > li.mega-menu-item
+    li.mega-menu-item
+    > a.mega-menu-link,
+  .responsive-menu
+    #mega-menu-wrap-header
+    #mega-menu-header
+    > li.mega-menu-megamenu
+    > ul.mega-sub-menu
+    li.mega-menu-column
+    > ul.mega-sub-menu
+    > li.mega-menu-item
+    li.mega-menu-item
+    > a.mega-menu-link {
+    font-size: 14px;
+  }
+
+  .responsive-menu
+    #mega-menu-wrap-header
+    #mega-menu-header
+    > li.mega-menu-megamenu
+    > ul.mega-sub-menu
+    li.product-cat
+    > ul.mega-sub-menu
+    > li.mega-menu-item
+    li.mega-menu-item
+    > a.mega-menu-link {
+    font-size: 16px;
+  }
+
+  .responsive-menu
+    #mega-menu-wrap-header
+    #mega-menu-header
+    > li.mega-menu-item
+    > a.mega-menu-link {
+    line-height: 23px;
+    padding-bottom: 8px;
+  }
+
+  .responsive-menu
+    #mega-menu-wrap-header
+    #mega-menu-header
+    li.product-cat
+    ul.mega-sub-menu
+    li.mega-2-columns
+    > ul.mega-sub-menu
+    > li.mega-menu-item {
+    width: 100% !important;
+  }
+
+  .responsive-menu
+    #mega-menu-wrap-header
+    #mega-menu-header
+    li.mega-menu-megamenu
+    > ul.mega-sub-menu
+    > li.mega-menu-row
+    .mega-menu-column
+    > ul.mega-sub-menu
+    > li.mega-menu-item {
+    padding-bottom: 11px;
+  }
+
+  .responsive-menu
+    #mega-menu-wrap-header
+    #mega-menu-header
+    > li.mega-menu-item.mega-current-menu-item
+    > a.mega-menu-link,
+  .responsive-menu
+    #mega-menu-wrap-header
+    #mega-menu-header
+    > li.mega-menu-item.mega-toggle-on
+    > a.mega-menu-link {
+    font-weight: 600;
+  }
+
+  .responsive-menu
+    #mega-menu-wrap-header
+    #mega-menu-header
+    > li.mega-menu-item {
+    border-bottom: 1px solid #c7c7c7;
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+
+  .responsive-menu
+    #mega-menu-wrap-header
+    #mega-menu-header
+    > li.mega-menu-megamenu.mega-menu-item.mega-toggle-on,
+  .responsive-menu
+    #mega-menu-wrap-header
+    #mega-menu-header
+    > li.mega-menu-item:last-child {
+    border: 0;
+  }
+
+  .site-header #mega-menu-wrap-header .mega-menu-toggle + #mega-menu-header,
+  .site-header
+    #mega-menu-wrap-header
+    #mega-menu-header
+    > li.mega-menu-megamenu
+    > ul.mega-sub-menu,
+  .responsive-menu
+    #mega-menu-wrap-header
+    #mega-menu-header
+    > li.mega-menu-item.mega-toggle-on
+    > a.mega-menu-link {
+    background: transparent;
+  }
+
+  .responsive-menu
+    #mega-menu-wrap-header
+    #mega-menu-header
+    > li.mega-menu-megamenu
+    > ul.mega-sub-menu {
+    box-shadow: none !important;
+  }
+}

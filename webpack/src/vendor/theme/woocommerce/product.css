@@ -1,0 +1,40 @@
+ul li.product h6 > a.woocommerce-loop-product__link {
+  display: none;
+}
+
+ul li.product,
+ul li.product {
+  width: 228px;
+  min-height: 359px;
+  margin-right: 24px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 24px;
+  margin-bottom: 1.6rem;
+}
+
+ul li.product a {
+  line-height: 27px;
+  font-family: Popins-medium;
+  font-weight: 600;
+  display: block;
+}
+
+ul li.product h6 a,
+ul li.product .price {
+  color: #1d1b1a;
+  font-size: 18px;
+  padding: 0 1rem;
+}
+
+ul li.product .price {
+  line-height: 24px;
+  margin-top: auto;
+}
+
+@media (min-width: 1290px) {
+  ul li.product:nth-child(5n+5) {
+    margin-right: 0;
+  }
+}

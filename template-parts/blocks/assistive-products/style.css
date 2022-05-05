@@ -1,0 +1,64 @@
+section.assistive-products .product {
+  width: 186px;
+  text-align: center;
+  background-color: #fff;
+  min-height: 312px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  padding-top: 43px;
+}
+
+section.assistive-products h6 {
+  margin-top: 67px;
+  color: #1d1b1a;
+  padding: 0 1rem;
+}
+
+section.assistive-products .product img {
+  width: 80%;
+  height: 100px;
+  margin-top: 43px;
+  margin-bottom: 67px;
+}
+
+section.assistive-products .title-and-tagline {
+  margin-bottom: 34px;
+}
+
+section.assistive-products span.ic {
+  font-size: 98px;
+}
+
+@media (max-width: 1099.98px) {
+  section.assistive-products .title-and-tagline {
+    margin-bottom: 36px;
+  }
+
+  section.assistive-products .product {
+    width: 100%;
+    min-height: 230px;
+    margin-bottom: 17px;
+    padding-top: 2rem;
+  }
+
+  section.assistive-products h6 {
+    font-size: 15px;
+    padding: 0 0.7rem;
+    margin-top: 46px;
+    display: flex;
+    justify-content: center;
+  }
+
+  section.assistive-products .col-6 {
+    padding-right: 8.5px;
+  }
+
+  section.assistive-products .col-6:last-child .product,
+  section.assistive-products .col-6:nth-last-child(2) .product {
+    margin-bottom: 0;
+  }
+
+  section.assistive-products span.ic {
+    font-size: 73px;
+  }
+}

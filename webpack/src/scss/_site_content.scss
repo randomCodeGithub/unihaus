@@ -1,0 +1,374 @@
+// Content styles goes here
+
+body {
+  background-color: #f9f9f9;
+}
+
+.site-wrap {
+  @media (max-width: $breakpoint_lg) {
+    margin-top: 80px;
+  }
+}
+
+// CONTAINER
+
+html[lang="ru-RU"] {
+  .page-title-and-tagline,
+  .title-and-tagline {
+    h1 {
+      -webkit-text-stroke: 1px rgba(0, 0, 0, 1);
+      // safari
+      @media not all and (min-resolution: 0.001dpcm) {
+        @supports (-webkit-appearance: none) {
+          -webkit-text-stroke: 0;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  &.page-title-and-tagline {
+    margin-bottom: 1.4rem;
+
+    h1 {
+      font-family: Popins-bold;
+      letter-spacing: -1.3px;
+    }
+
+    .tagline {
+      padding-top: 0.2rem;
+      padding-bottom: 0.2rem;
+      margin-top: 0.7rem;
+    }
+
+    @media (min-width: map-get( $breakpoints, lg )) {
+      h1 {
+        max-width: 55%;
+      }
+      .tagline {
+        max-width: 45%;
+      }
+    }
+
+    @media (max-width: $breakpoint_lg) {
+      .tagline {
+        margin-top: 0;
+        padding-top: 0;
+      }
+    }
+  }
+
+  &.editor {
+    strong {
+      font-weight: 600;
+      margin-right: 0.25rem;
+
+      // safari
+      @media not all and (min-resolution: 0.001dpcm) {
+        @supports (-webkit-appearance: none) {
+          font-weight: 500;
+          -webkit-text-stroke: 0.4px;
+        }
+      }
+    }
+    @media (max-width: $breakpoint_lg) {
+      .editor[class*="col"] {
+        margin-bottom: 2.4rem;
+        &:last-child {
+          margin-bottom: 0rem;
+        }
+      }
+      h4 {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .col-lg-3 {
+    padding-right: 9px;
+  }
+  @media (max-width: $breakpoint_sm) {
+    max-width: 291px;
+    padding: 0;
+    &.page-title-and-tagline {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (min-width: map-get( $breakpoints, sm )) and (max-width: $breakpoint_md) {
+    max-width: 450px;
+  }
+
+  @media (min-width: map-get( $breakpoints, md )) and (max-width: $breakpoint_lg) {
+    max-width: 680px;
+  }
+}
+
+.title-and-tagline {
+  .title {
+    margin-right: 34px;
+  }
+
+  .tagline {
+    font-family: Popins-light;
+    padding-left: 34px;
+    border-left: 2px solid #f77a1e;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+  }
+
+  @media (max-width: $breakpoint_lg) {
+    flex-direction: column;
+
+    .title {
+      margin-right: 0;
+    }
+
+    .tagline {
+      border: 0;
+      padding-left: 0;
+      font-size: 18px;
+      line-height: 27px;
+      &::before {
+        content: "";
+        display: block;
+        width: 39px;
+        height: 2px;
+        background-color: #f77a1e;
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint_md) {
+    padding-right: 1rem;
+    .tagline {
+      &::before {
+        margin: 12px 0;
+      }
+    }
+  }
+
+  @media (min-width: map-get( $breakpoints, md )) and (max-width: $breakpoint_lg) {
+    .tagline {
+      &::before {
+        margin: 12px auto;
+      }
+    }
+  }
+}
+
+.shadow {
+  filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.03));
+}
+
+section,
+.section-container,
+section.product-tabs .service-tab {
+  margin-bottom: 140px;
+
+  @media (max-width: $breakpoint_lg) {
+    margin-bottom: 71px;
+  }
+}
+
+.text-container {
+  margin-bottom: 60px;
+  @media (max-width: $breakpoint_lg) {
+    margin-bottom: 38px;
+  }
+}
+
+.tax_label {
+  display: none;
+}
+
+// TAXONOMY
+
+.taxonomy-tabs {
+  .tax-tab {
+    font-size: 18px;
+    padding: 16px 24px;
+    cursor: pointer;
+    background-color: $c_primary;
+    border-bottom: 3px solid #dfdfdf;
+
+    &.active {
+      border-bottom: 3px solid $c_secondary;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.taxonomy-tab-contents {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 21px;
+  padding-bottom: 24px;
+  background-color: $c_primary;
+  .taxonomy-tab-content {
+    width: 678px;
+    display: none;
+
+    strong {
+      font-weight: 600;
+    }
+
+    .documents {
+      padding-top: 36px;
+      width: fit-content;
+      .document {
+        margin-bottom: 1.7rem;
+        a {
+          font-size: 16px;
+        }
+        span {
+          margin-left: 1rem;
+          font-family: Rubik;
+          font-weight: 600;
+          color: #3e3e3e;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  p + ol {
+    margin-top: -24px;
+  }
+
+  ol {
+    counter-reset: item;
+    margin-left: 0;
+    padding-left: 0;
+    li {
+      display: inline-block;
+      margin-left: 2em;
+      width: 100%;
+    }
+    li::before {
+      display: inline-block;
+      content: counter(item) ") ";
+      counter-increment: item;
+      width: 1.1em;
+      margin-left: -2em;
+    }
+  }
+
+  table {
+    table-layout: fixed;
+
+    td {
+      padding-right: 1.5rem;
+      width: auto !important;
+    }
+  }
+
+  @media (max-width: $breakpoint_md) {
+    table {
+      width: 1200px !important;
+
+      &.one-column {
+        width: 100% !important;
+      }
+    }
+
+    .taxonomy-tab-content[content_name="papildus_aprikojums"] table {
+      width: 100% !important;
+    }
+  }
+
+  @media (max-width: $breakpoint_lg) {
+    padding-right: 0;
+    p + ol {
+      margin-top: -45px;
+    }
+    ol {
+      white-space: pre-line;
+      li {
+        display: inline;
+      }
+    }
+  }
+}
+
+.taxonomy {
+  p,
+  ul {
+    margin-bottom: 24px;
+  }
+
+  .title-and-tagline {
+    margin-bottom: 24px;
+  }
+
+  .about-taxonomy {
+    margin-bottom: 48px;
+    .additional-text {
+      margin-bottom: 47px;
+      padding-top: 2.2rem;
+      padding-right: 6rem;
+    }
+  }
+}
+
+.taxonomy,
+.product-tabs,
+.container.editor {
+  ul {
+    &:not(ul.slides, ul.flex-direction-nav) {
+      margin-bottom: 24px;
+      li {
+        width: 100%;
+        padding-left: 1.6rem;
+        position: relative;
+        margin-bottom: 0.6rem;
+        text-indent: 0rem;
+
+        &::before {
+          content: "• ";
+          color: $c_secondary;
+          font-size: 46px;
+          left: -4px;
+          top: -0.1rem;
+          position: absolute;
+        }
+      }
+    }
+
+    @media (max-width: $breakpoint_lg) {
+      &:not(ul.slides, ul.flex-direction-nav) {
+        margin-bottom: 21px;
+        li {
+          padding-left: 1.3rem;
+          margin-bottom: 0.5rem;
+
+          &::before {
+            left: -3px;
+            top: 0rem;
+            font-size: 38px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.flex-direction-nav a {
+  border: solid $c_secondary;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 7px;
+  position: absolute;
+  top: 50%;
+  margin-top: -18px;
+  z-index: 3;
+  cursor: pointer;
+  width: auto !important;
+  height: auto !important;
+  top: 38% !important;
+}

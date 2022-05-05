@@ -1,0 +1,156 @@
+section.product-tabs .service-tab {
+  display: flex;
+  margin-bottom: 8.3rem;
+}
+
+section.product-tabs {
+  margin-top: -0.15rem;
+}
+
+section.product-tabs .service-tab-contents .service-tab-content {
+  display: none;
+  padding: 6px 12px;
+  padding-bottom: 0;
+}
+
+section.product-tabs .service-tab .uh-btn-tab {
+  margin-right: 24px;
+}
+
+section.product-tabs .service-tab-contents .text-block-half {
+  padding-right: 6rem;
+  margin-bottom: 50px;
+}
+
+section.product-tabs
+  .service-tab-contents
+  .flex-lg-row-reverse
+  .text-block-half {
+  padding-left: 6.5rem;
+  padding-right: 1px;
+}
+
+section.product-tabs
+  .service-tab-contents
+  .image-and-text-block.flex-lg-row-reverse
+  a {
+  margin-left: 6.5rem;
+}
+
+section.product-tabs a {
+  display: inline-block;
+}
+
+section.product-tabs .service-tab-contents .text-block-full {
+  padding: 0 11rem;
+}
+
+section.product-tabs .service-tab-contents .image-and-text-block,
+section.product-tabs .service-tab-contents .title-and-tagline {
+  margin-bottom: 60px;
+}
+
+section.product-tabs .service-tab-contents .image-and-text-block:last-child {
+  margin-bottom: 0px;
+}
+
+section.product-tabs .service-tab-contents h4 {
+  margin-bottom: 1.2rem;
+}
+
+section.product-tabs .service-tab-contents p {
+  margin-bottom: 1.6rem;
+}
+
+section.product-tabs .service-tab-contents a.less,
+section.product-tabs .service-tab-contents p:not(p:first-of-type) {
+  display: none;
+}
+
+@media (max-width: 1099.98px) {
+  section.product-tabs .service-tab .uh-btn-tab {
+    margin-bottom: 0.9rem;
+  }
+
+  section.product-tabs .service-tab {
+    margin-bottom: 3.05rem;
+  }
+
+  section.product-tabs .service-tab-contents .service-tab-content {
+    padding-left: 17px;
+    padding-right: 13px;
+  }
+
+  section.product-tabs .service-tab-contents .title-and-tagline {
+    margin-bottom: 2.2rem;
+  }
+
+  section.product-tabs .service-tab-contents h4 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 1.3rem;
+  }
+
+  section.product-tabs .service-tab-contents .text-block-half {
+    padding-right: 0;
+  }
+  section.product-tabs .service-tab-contents .image-and-text-block a,
+  section.product-tabs .service-tab-contents .text-block-half p:last-child,
+  section.product-tabs
+    .service-tab-contents
+    .image-and-text-block
+    .text-block-full {
+    margin-bottom: 40px;
+  }
+
+  section.product-tabs .service-tab-contents .image-and-text-block,
+  section.product-tabs .service-tab-contents .text-block-half,
+  section.product-tabs .service-tab-contents .image-and-text-block.first-block {
+    margin-bottom: 0;
+  }
+
+  section.product-tabs .service-tab-contents .text-block-full h4,
+  section.product-tabs .service-tab .uh-btn-tab {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  section.product-tabs .service-tab-contents .image-and-text-block {
+    flex-direction: column-reverse;
+  }
+
+  section.product-tabs .service-tab-contents .image-and-text-block img {
+    margin-bottom: 2.4rem;
+  }
+
+  section.product-tabs a {
+    margin-top: 0.5rem;
+  }
+
+  section.product-tabs .service-tab-contents .image-and-text-block.first-block {
+    flex-direction: column;
+  }
+
+  section.product-tabs .service-tab-contents .text-block-full {
+    padding: 0;
+  }
+
+  section.product-tabs .service-tab-contents p {
+    margin-bottom: 1.3rem;
+  }
+
+  section.product-tabs
+    .service-tab-contents
+    .flex-lg-row-reverse
+    .text-block-half {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  section.product-tabs
+    .service-tab-contents
+    .image-and-text-block.flex-lg-row-reverse
+    a {
+    margin-left: 0;
+  }
+}

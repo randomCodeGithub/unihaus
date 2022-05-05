@@ -1,0 +1,25 @@
+.col-category .facetwp-checkbox,
+.col-category .facetwp-checkbox.checked {
+  background-image: none;
+}
+
+.col-category .facetwp-checkbox::before,
+.col-category .facetwp-checkbox.checked::after {
+  content: "";
+}
+
+.col-category .facetwp-checkbox::before {
+  width: 19px;
+  height: 19px;
+  border: 2px solid #dfdfdf;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.col-category .facetwp-checkbox.checked::after {
+  content: "\e905";
+  font-family: "Unihaus-icons" !important;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #f77a1e;
+}

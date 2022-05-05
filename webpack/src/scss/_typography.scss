@@ -1,0 +1,479 @@
+body,
+section.documents .document-area .document p {
+  font-family: Rubik;
+  color: $c_default;
+}
+
+body,
+.p,
+section.documents .document-area .document p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.p--small,
+.has-small-font-size {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+a {
+  color: $c_default;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+sub,
+sup {
+  font-size: 60%;
+}
+
+/**
+ * Editor styles
+ */
+
+.editor .container.editor:first-child {
+  margin-top: 70px;
+}
+
+// General
+.editor > p:last-child,
+.editor > ul:last-child,
+.editor > ol:last-child {
+  margin-bottom: 0 !important;
+}
+
+.editor > p,
+.editor .wp-block-column > p {
+  margin-bottom: 23px;
+}
+
+.editor.p-small > p,
+.editor.p-small .wp-block-column > p {
+  margin-bottom: 10px;
+}
+
+// Lists
+.editor > ul,
+.editor > ol {
+  margin-bottom: 21px;
+  list-style: none;
+}
+.editor > ol,
+.editor > ol ol {
+  counter-reset: item;
+}
+
+.editor > ul li,
+.editor > ol li {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+.editor > ol li {
+  padding-left: 35px;
+  counter-increment: item;
+}
+.editor > ul > li:last-child,
+.editor > ol > li:last-child {
+  margin-bottom: 0;
+}
+
+// .editor > ul li:before {
+//   position: absolute;
+//   top: 7px;
+//   left: 0;
+//   width: 6px;
+//   height: 6px;
+//   background: $c_dark;
+//   border-radius: 50%;
+//   content: "";
+// }
+
+.editor > ol li:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  text-align: right;
+  content: counter(item) ".";
+}
+
+// Tables
+.wp-block-table table {
+  width: 100%;
+}
+
+.wp-block-table table,
+.wp-block-table th,
+.wp-block-table td {
+  border: 1px solid $c_dark;
+}
+
+.wp-block-table th,
+.wp-block-table td {
+  padding: 8px 12px;
+}
+.wp-block-table th {
+  border-bottom-width: 3px;
+}
+
+h1 {
+  font-size: 58px;
+  line-height: 78px;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Popins-medium;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+html[lang="ru-RU"] {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Rubik;
+    font-weight: 600;
+  }
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 72px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 51px;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 35px;
+}
+
+h5 {
+  font-size: 21px;
+  line-height: 31px;
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+@media (max-width: $breakpoint_lg) {
+  h1 {
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  h2,
+  h3 {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  h5 {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  h6 {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  body {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+/**
+ * Helpers
+ */
+
+// General
+.ta--center,
+.text-center,
+.aligncenter,
+.has-text-align-center {
+  text-align: center;
+}
+.ta--left {
+  text-align: left;
+}
+.ta--right {
+  text-align: right;
+}
+
+// Formating
+.semibold {
+  font-weight: 500;
+}
+.bold {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+
+.text-decor-none {
+  text-decoration: none !important;
+}
+.underline {
+  text-decoration: underline;
+}
+
+.line-1 {
+  line-height: 1;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Colors
+.c--white {
+  color: #fff;
+}
+.c--default {
+  color: $c_default;
+}
+.c--primary {
+  color: $c_primary;
+}
+.c--secondary {
+  color: $c_secondary;
+}
+
+// btns
+.uh-btn,
+.cc-allow {
+  font-family: Rubik;
+  color: $c_primary;
+  background-color: $c_secondary;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 16px 30px;
+  border-radius: 30px;
+
+  &:hover,
+  &:active {
+    background-color: #e2610a;
+  }
+
+  @media (max-width: $breakpoint_sm) {
+    padding: 10px 18px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.uh-btn-tab {
+  font-family: Popins-medium;
+  cursor: pointer;
+  padding: 40px 90px;
+  background-color: #fff;
+  border-radius: 10px;
+  font-size: 21px;
+  line-height: 31px;
+
+  width: 291px;
+  padding: 24px 53px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  &:hover,
+  &:active,
+  &.active {
+    color: $c_primary;
+    background-color: $c_secondary;
+  }
+
+  @media (max-width: $breakpoint_lg) {
+    padding-top: 7px;
+    padding-bottom: 8px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+}
+
+// permalinks
+
+a {
+  font-family: Rubik;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: $c_secondary;
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+
+  &:visited {
+    // color: #8e43bf;
+  }
+
+  @media (max-width: $breakpoint_lg) {
+    font-size: 14px;
+  }
+}
+
+// ICONS
+.ic {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "Unihaus-icons" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ic--facebook:before {
+  content: "\e900";
+}
+.ic--instagram:before {
+  content: "\e901";
+}
+.ic--waze:before {
+  content: "\e902";
+}
+.ic--phone:before {
+  content: "\e903";
+}
+.ic--email:before {
+  content: "\e91f";
+}
+.ic--checkmark:before {
+  content: "\e905";
+}
+.ic--cart:before {
+  content: "\e906";
+}
+.ic--search:before {
+  content: "\e907";
+}
+.ic--home:before {
+  content: "\e908";
+}
+.ic--document:before {
+  content: "\e909";
+}
+.ic--protozesana:before {
+  content: "\e90a";
+}
+.ic--gaitasanalize:before {
+  content: "\e90b";
+}
+.ic--ortopediskaszoles:before {
+  content: "\e90c";
+}
+.ic--download:before {
+  content: "\e90d";
+}
+.ic--ortoze:before {
+  content: "\e90e";
+}
+.ic--proteze:before {
+  content: "\e90f";
+}
+.ic--mobpacelajs:before {
+  content: "\e910";
+}
+.ic--trepjukapejs:before {
+  content: "\e911";
+}
+.ic--mazgasanas:before {
+  content: "\e916";
+}
+.ic--bernuautokreslins:before {
+  content: "\e917";
+}
+.ic--pretizgulejuma:before {
+  content: "\e918";
+}
+.ic--funkcgultas:before {
+  content: "\e919";
+}
+.ic--papildaprikojums:before {
+  content: "\e91a";
+}
+.ic--aktivitasukresls:before {
+  content: "\e91b";
+}
+.ic--elektropiedz:before {
+  content: "\e91c";
+}
+.ic--ritenkresls:before {
+  content: "\e91d";
+}
+.ic--close:before {
+  content: "\e912";
+}
+.ic--cart-checkmark:before {
+  content: "\e913";
+}
+.ic--cart-checkmark:after {
+  content: "\e914";
+  margin-left: -1em;
+  color: rgb(246, 246, 246);
+}
+
+.ic--play-button:before {
+  content: "\e915";
+}
+
+.ic--plus:before {
+  content: "\e91e";
+}
+
+.ic--vertikalizators:before {
+  content: "\e904";
+}
+
+.ic--bernu-ratini:before {
+  content: "\e922";
+}

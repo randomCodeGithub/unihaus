@@ -1,0 +1,49 @@
+// Double gutter size will be added to this to determine .container width
+$site_width: 1236px;
+
+// Size between columns
+$gutters: 24px;
+
+// Responsive setup
+$breakpoints: (
+	xl: 1360px,
+	lg: 1100px,
+	md: 768px,
+	sm: 480px,
+	xs: 0
+);
+
+$breakpoint_xl: map-get( $breakpoints, xl ) - 1;
+$breakpoint_lg: map-get( $breakpoints, lg ) - 1;
+$breakpoint_md: map-get( $breakpoints, md ) - 1;
+$breakpoint_sm: map-get( $breakpoints, sm ) - 1;
+
+
+
+// Colors
+$c_default  : #1D1B1A;
+$c_primary  : #FFFFFF;
+$c_secondary: #F77A1E;
+$c_light    : #cdd0d5;
+$c_dark     : #747373;
+$c_error    : #ee1237;
+$c_success  : #26a65b;
+
+
+
+// Includes ( comment out or uncomment anything you need )
+// Framework
+@import 'framework/bootstrap_grid';
+@import 'framework/framework_layout';
+@import 'framework/framework_page';
+@import 'framework/framework_visual';
+// @import 'framework/framework_print';
+@import 'font_face';
+
+// Components
+// @import 'components/pager';
+
+// Theme
+@import 'typography';
+@import 'header_footer';
+@import 'site_content';

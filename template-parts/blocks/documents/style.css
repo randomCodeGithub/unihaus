@@ -1,0 +1,73 @@
+section.documents .document-area .document {
+  font-size: 60px;
+  width: 228px;
+  height: 273px;
+  margin-right: 24px;
+  background-color: #fff;
+  padding-left: 1rem;
+}
+section.documents .document-area .document:last-child {
+  margin-right: 0;
+}
+
+section.documents .document-area .document,
+section.documents .document-area .document::before {
+  display: block;
+}
+section.documents .document-area .document::before {
+  margin-bottom: 0.9rem;
+  margin-top: 23px;
+  font-size: 70px;
+}
+
+section.documents .document-area {
+  margin-top: 0.8rem;
+}
+section.documents .document-area p {
+  font-weight: 500;
+}
+
+@media (max-width: 767.98px) {
+  section.documents .document-area .document {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    height: 216px;
+  }
+  section.documents .document-area .document:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1099px) {
+  section.documents .document-area .document {
+    margin-right: 1rem;
+    margin-bottom: 20px;
+    height: auto;
+    width: 31%;
+    padding-bottom: 15px;
+  }
+
+  section.documents .document-area .document:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1099.98px) {
+  section.documents .document-area .document::before {
+    margin-bottom: 0.8rem;
+    padding-left: 0.2rem;
+    margin-top: 25px;
+  }
+
+  section.documents .document-area {
+    margin-top: 0;
+    margin-bottom: -0.2rem;
+  }
+}
+
+@media (min-width: 1284px) {
+  section.documents .document-area .document.last-in-row {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,82 @@
+section.contacts .row:first-child {
+  margin-top: 3.6rem;
+}
+section.contacts .email {
+  margin-right: 24px;
+}
+
+section.contacts .email,
+section.contacts .phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 100%;
+  background-color: #fff;
+  font-size: 25px;
+}
+
+section.contacts a h4 {
+  margin-left: 1rem;
+  color: #1d1b1a;
+}
+
+section.contacts .title-and-tagline {
+  margin-bottom: 56px;
+}
+
+section.contacts .note {
+  margin-top: 24px;
+  margin-bottom: -48px;
+}
+section.contacts .note p {
+  font-style: italic;
+}
+
+section.contacts .email-col {
+  padding-left: 0.7rem;
+}
+
+section.contacts .phone-col {
+  padding-right: 0.8rem;
+}
+
+@media (max-width: 1099.98px) {
+  section.contacts.container .row:first-child {
+    margin-top: -0.4rem;
+  }
+  section.contacts .email-col {
+    margin-bottom: 14px;
+  }
+
+  section.contacts .email-col,
+  section.contacts .phone-col {
+    padding: 0 12px;
+  }
+
+  section.contacts .email,
+  section.contacts .phone {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  section.contacts .title-and-tagline {
+    margin-bottom: 34px;
+  }
+
+  section.contacts a h4 {
+    font-size: 17px;
+    line-height: 26px;
+    margin-left: 0.8rem;
+  }
+
+  section.contacts .ic:before {
+    margin-left: -0.5rem;
+  }
+
+  section.contacts .note {
+    margin-top: 21px;
+    margin-bottom: 0;
+  }
+}

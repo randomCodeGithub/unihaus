@@ -1,0 +1,46 @@
+.woopq-quantity-input {
+  width: max-content;
+  border: 1px solid #cbcbcb;
+  border-radius: 5px;
+}
+.woopq-quantity-input-plus,
+.woopq-quantity-input-minus,
+.woopq-quantity-input .qty {
+  border: none;
+  height: 27px;
+  border-radius: inherit;
+}
+
+.woopq-quantity-input-plus,
+.woopq-quantity-input-minus {
+  width: 25px;
+  line-height: 27px;
+}
+
+.woocommerce .quantity .qty {
+  padding-right: 1.8rem;
+  padding-left: 0;
+}
+
+.woocommerce .quantity .qty {
+  width: 3.131em;
+}
+
+.woopq-quantity-input .item-name {
+  position: absolute;
+  right: 2px;
+  pointer-events: none;
+  font-family: Rubik;
+  font-size: 16px;
+  top: 0px;
+  bottom: 2px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1099.98px) {
+  .woopq-quantity-input-plus,
+  .woopq-quantity-input-minus {
+    width: 24px;
+  }
+}

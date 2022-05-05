@@ -1,0 +1,27 @@
+@media not all and (min-resolution: 0.001dpcm) {
+  .woocommerce .quantity .qty {
+    background: transparent;
+    margin-top: -6px;
+  }
+
+  section.cart .woopq-quantity-input .item-name {
+    bottom: -4px;
+  }
+
+  .single-product .woopq-quantity-input .item-name {
+    bottom: -1px;
+  }
+  @media (max-width: 1099.98px) {
+    .woopq-quantity-input .item-name {
+      bottom: 0px;
+    }
+
+    section.cart .woopq-quantity-input .item-name {
+      bottom: -1px;
+    }
+
+    .woocommerce section.cart .quantity .qty {
+      margin-top: -9px;
+    }
+  }
+}

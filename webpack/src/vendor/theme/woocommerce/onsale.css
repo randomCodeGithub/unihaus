@@ -1,0 +1,15 @@
+.onsale {
+    color: #fff;
+    background-color: #d91414;
+    top: 24px;
+    margin: 0;
+    left: 0;
+    right: auto;
+    padding: 0 1rem;
+    min-height: 29px;
+    border-radius: 0px 5px 5px 0px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 31px;
+    position: absolute;
+}

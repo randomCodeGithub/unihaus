@@ -1,0 +1,56 @@
+section.related-products a.uh-btn {
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+section.related-products .title-and-tagline {
+  margin-bottom: 28px;
+}
+
+section.related-products ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+section.related-products ul li {
+  position: relative;
+}
+
+section.related-products ul li,
+section.related-products ul li img {
+  border-radius: 10px;
+}
+
+section.related-products ul li .onsale {
+  color: #fff;
+  background-color: #d91414;
+  top: 24px;
+  margin: 0;
+  left: 0;
+  right: auto;
+  padding: 0 1rem;
+  min-height: 29px;
+  border-radius: 0px 5px 5px 0px;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 31px;
+  position: absolute;
+}
+
+section.related-products ul li ins {
+  text-decoration: none;
+}
+
+@media (max-width: 1099.98px) {
+  section.related-products ul li.product {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  section.related-products ul li.product img {
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+  }
+}

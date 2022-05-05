@@ -1,0 +1,39 @@
+// Font face declarations goes here
+
+@font-face {
+  font-family: Popins-bold;
+  src: url(../fonts/Poppins/Poppins-Bold.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Popins-medium;
+  src: url(../fonts/Poppins/Poppins-Medium.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Popins-light;
+  src: url(../fonts/Poppins/Poppins-Light.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url(../fonts/Rubik/Rubik-VariableFont_wght.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unihaus-icons";
+  src: url("../fonts/Unihaus-icons/Unihaus-icons.eot?gvud6l");
+  src: url("../fonts/Unihaus-icons/Unihaus-icons.eot?gvud6l#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Unihaus-icons/Unihaus-icons.ttf?gvud6l") format("truetype"),
+    url("../fonts/Unihaus-icons/Unihaus-icons.woff?gvud6l") format("woff"),
+    url("../fonts/Unihaus-icons/Unihaus-icons.svg?gvud6l#Unihaus-icons")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}

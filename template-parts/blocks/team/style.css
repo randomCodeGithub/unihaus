@@ -1,0 +1,46 @@
+section.team .title-and-tagline {
+  margin-bottom: 6.2rem;
+}
+
+section.team .team-member .member-photo {
+  height: 183px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 24px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section.team .team-member h5 {
+  margin-bottom: 0.8rem;
+  line-height: 27px;
+}
+
+section.team .team-member p,
+section.team .team-member h5 {
+  font-size: 18px;
+}
+
+@media (max-width: 1099.98px) {
+  section.team .title-and-tagline {
+    margin-bottom: 2rem;
+  }
+
+  section.team .col-lg-4 .team-member {
+    margin-bottom: 3rem;
+  }
+
+  section.team .col-lg-4:last-child .team-member {
+    margin-bottom: 0rem;
+  }
+
+  section.team .team-member .member-photo {
+    height: 168px;
+  }
+
+  section.team .team-member p {
+    font-size: 16px;
+  }
+}

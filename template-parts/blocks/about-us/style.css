@@ -1,0 +1,44 @@
+section.about-us .what-we-do {
+  padding-left: 6.6rem;
+}
+section.about-us .what-we-do p {
+  padding-bottom: 32px;
+  border-bottom: 2px solid #ebebeb;
+  margin-bottom: 30px;
+}
+
+section.about-us .what-we-do a {
+  margin-top: 50px;
+}
+
+section.about-us .what-we-do p:last-of-type {
+  padding-bottom: 0;
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+section.about-us .title-and-tagline {
+  margin-bottom: 43px;
+}
+
+@media (max-width: 1099.98px) {
+  section.about-us .title-and-tagline {
+    margin-bottom: 35px;
+  }
+  section.about-us .what-we-do {
+    padding-left: 0;
+  }
+  section.about-us img {
+    margin-bottom: 35px;
+  }
+
+  section.about-us .what-we-do a {
+    margin-top: 36px;
+  }
+
+  section.about-us .what-we-do p {
+    line-height: 21px;
+    padding-bottom: 27px;
+    margin-bottom: 21px;
+  }
+}

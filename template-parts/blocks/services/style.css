@@ -1,0 +1,65 @@
+.services .service-icon {
+  height: 116px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.9rem;
+}
+section + section.services {
+  margin-top: -1.5rem;
+}
+
+.services .ic {
+  font-size: 70px;
+}
+
+.services h5 {
+  color: #1d1b1a;
+}
+
+.services .ic--protozesana {
+  font-size: 115px;
+}
+
+.services .ic--gaitasanalize {
+  font-size: 90px;
+}
+
+section.services .title-and-tagline {
+  margin-bottom: 65px;
+}
+
+.services a,
+.services .ic {
+  transition: all 0.2s ease-in-out;
+}
+.services a:hover {
+  background-color: #fff;
+}
+
+.services a:hover .ic {
+  transform: rotate(-60deg);
+}
+
+@media (max-width: 1099.98px) {
+  section.services .title-and-tagline {
+    margin-bottom: 52px;
+  }
+
+  .services a {
+    margin-bottom: 46px;
+  }
+
+  .services .service-icon {
+    margin-bottom: 1rem;
+  }
+
+  .services h5 {
+    padding: 0 0.4rem;
+    font-size: 18px;
+  }
+
+  .services .col-lg-4:last-child a {
+    margin-bottom: 0;
+  }
+}
